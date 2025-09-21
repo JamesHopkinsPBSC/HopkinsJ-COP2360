@@ -3,9 +3,10 @@ using System;
 class Octopus
 {
     string name;
-    public int Age = 24;
+    public int weight kg = 10;
     static readonly int legs = 8;
-    static readonly int eyes = 1;
+    static readonly int beak = 1;
+    static readonly int brain = 9;
     public readonly string Name;
     public readonly int Legs = 8;
 
