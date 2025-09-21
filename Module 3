@@ -23,6 +23,7 @@ class Program
 // Create a new Octopus object named "Inky"
 Octopus myOctopus = new Octopus("Inky");
         Console.WriteLine("Age of Inky: " + o.Age);
+        Console.WriteLine("Favorite Food: " + o.Food);
         Console.WriteLine("Name Inky: " + o.Name);
         Console.ReadLine();
     }
