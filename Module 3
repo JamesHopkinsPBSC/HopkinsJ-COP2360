@@ -7,8 +7,7 @@ class Octopus
     static readonly int legs = 8;
     static readonly int beak = 1;
     static readonly int brain = 9;
-    public readonly string Name;
-    public readonly int Legs = 8;
+  
 
     public Octopus(string name)
     {
@@ -20,9 +19,11 @@ class Program
 {
     static void Main()
     {
-        var o = new Octopus("Larry");
-        Console.WriteLine("Age: " + o.Age);
-        Console.WriteLine("Name: " + o.Name);
+
+// Create a new Octopus object named "Inky"
+Octopus myOctopus = new Octopus("Inky");
+        Console.WriteLine("Age of Inky: " + o.Age);
+        Console.WriteLine("Name Inky: " + o.Name);
         Console.ReadLine();
     }
 }
