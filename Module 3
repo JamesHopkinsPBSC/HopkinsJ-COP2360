@@ -1,6 +1,6 @@
+﻿using System;
 
 
-// The provided base class with a readonly field.
 public class Octopus
 {
     public readonly string Name;
