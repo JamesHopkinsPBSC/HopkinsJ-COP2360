@@ -1,42 +1,27 @@
-﻿using System;
+using System;
 
-
-public class Octopus
+class Octopus
 {
+    string name;
+    public int Age = 24;
+    static readonly int legs = 8;
+    static readonly int eyes = 1;
     public readonly string Name;
     public readonly int Legs = 8;
+
     public Octopus(string name)
     {
         Name = name;
     }
 }
 
-// Inherit from Octopus to create a new class
-public class MimicOctopus : Octopus
-{
-    // A constant field for the Mimic Octopus's unique trait.
-    public const string UniqueTrait = "Imitates other sea creatures";
-    
-    // The constructor for the derived class.
-    public MimicOctopus(string name) : base(name)
-    {
-        // Name is assigned in the base class constructor.
-    }
-}
-
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        // 1. Create an instance of the Octopus class.
-        var o = new Octopus("Jack");
-        Console.WriteLine($"Name: {o.Name}, Legs: {o.Legs}");
-        
-        // The following line would cause a compile-time error because Name is readonly:
-        // o.Name = "Jill"; 
-        
-        // 2. Create an instance of the derived MimicOctopus class.
-        var mimic = new MimicOctopus("Mimic");
-        Console.WriteLine($"Name: {mimic.Name}, Legs: {mimic.Legs}, Trait: {MimicOctopus.UniqueTrait}");
+        var o = new Octopus("Larry");
+        Console.WriteLine("Age: " + o.Age);
+        Console.WriteLine("Name: " + o.Name);
+        Console.ReadLine();
     }
 }
